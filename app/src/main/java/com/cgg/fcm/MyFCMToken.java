@@ -17,5 +17,6 @@ public class MyFCMToken extends FirebaseMessagingService {
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
         super.onMessageReceived(remoteMessage);
+        Log.i(TAG, "onMessageReceived: "+remoteMessage);
     }
 }
